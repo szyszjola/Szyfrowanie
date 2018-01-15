@@ -1,0 +1,24 @@
+﻿<Window x:Class="MakeAHashHash.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MakeAHashHash"
+        mc:Ignorable="d"
+        KeyDown="Window_KeyDown"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <TextBox HorizontalAlignment="Left" Height="31" Margin="10,49,0,0" TextWrapping="Wrap" x:Name="InputTekst" VerticalAlignment="Top" Width="184"/>
+        <TextBox HorizontalAlignment="Left" Margin="10,151,0,0" TextWrapping="Wrap" x:Name="OutputTekst" VerticalAlignment="Top" Height="111" Width="184"/>
+        <Button  Content="Hash" x:Name="ButtonHash" Click="ButtonHash_Click" HorizontalAlignment="Left" Margin="10,106,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Porównaj" x:Name="PorownanieButton" Click="PorownanieButton_Click" HorizontalAlignment="Left" Margin="119,106,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label Content="Szyfrowanie MD5" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="27" Width="184"/>
+        <Label Content="Szyfrowanie DES" HorizontalAlignment="Left" Margin="257,10,0,0" VerticalAlignment="Top" Height="27" Width="168"/>
+        <TextBox HorizontalAlignment="Left" Height="31" Margin="257,49,0,0" TextWrapping="Wrap" x:Name="DESInputTekst" VerticalAlignment="Top" Width="190"/>
+        <TextBox HorizontalAlignment="Left" Height="111" Margin="257,151,0,0" TextWrapping="Wrap" x:Name="DESOutputTekst" VerticalAlignment="Top" Width="190"/>
+        <Button Content="Szyfruj" x:Name="SzyfrujDESButton" Click="SzyfrujDESButton_Click" HorizontalAlignment="Left" Margin="257,106,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Odszyfruj" x:Name="OdszyfrujButton" Click="OdszyfrujButton_Click" HorizontalAlignment="Left" Margin="372,106,0,0" VerticalAlignment="Top" Width="75"/>
+
+
+    </Grid>
+</Window>
